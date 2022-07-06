@@ -1,19 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 
+#include <stdio.h>
 /**
- * main ->  prints the alphabet in lowercase, followed by a new line
- * REturn : always 0
+ * main -Entry point
+ *
+ * Return: Always 0 (Success/correct)
  */
-int main (void)
+int main(void)
+
 {
-	int ch;
-	for (ch=97;ch<=122;ch++)
+	char alphabet;
+
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(ch);
+		putchar(alphabet);
 	}
-	putchar(10);
+
+	putchar('\n');
 
 	return (0);
+
 }
