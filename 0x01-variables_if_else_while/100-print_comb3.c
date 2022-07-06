@@ -6,30 +6,30 @@
  */
 int main(void)
 {
-		int c;
-			int d = 0;
+	int i, j;
 
-				while (d < 10)
-						{
-									c = 0;
-											while (c < 10)
-														{
-																		if (d != c && d < c)
-																						{
-																											putchar('0' + d);
-																															putchar('0' + c);
+	i = 48;
+	j = 48;
 
-																																			if (c + d != 17)
-																																								{
-																																														putchar(',');
-																																																			putchar(' ');
-																																																							}
-																																						}
+	while (i < 58)
+	{
+		j = i + 1;
+		while (j < 58)
+		{
+			putchar(i);
+			putchar(j);
 
-																					c++;
-																							}
-													d++;
-														}
-					putchar('\n');
-						return (0);
+			if (i < 56 || j < 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
+		        j++;
+	        }
+	       
+		i++;
+         }
+putchar(10);
+
+return (0);
 }
