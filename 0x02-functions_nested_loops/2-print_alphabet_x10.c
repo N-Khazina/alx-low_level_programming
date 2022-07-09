@@ -4,39 +4,22 @@
  *
  * Return: Always 0.
  */
-void print_alphabetint count;
-
-
-
-
-
-count = 0;
-
-while (count < 10)
-
+void print_alphabet_x10(void)
 {
-	
-	for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
-		
+	int alphabet;
+	int count;
+
+	count = 0;
+	while (count < 10)
 	{
-		
-		_putchar(alphabet);
-		
+		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+		{
+			_putchar(alphabet);
+		}
+
+		count ++;
+		_putchar('\n')
 	}
-	
-	
-	
-	count++;
-	
-	_putchar('\n');
-	
+
 }
 
-
-
-
-
-}_x10(void)
-
-{
-	int alphabe
