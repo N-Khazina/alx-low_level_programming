@@ -8,25 +8,15 @@
 
 
 void print_alphabet(void)
-
 {
-
-	char alphabet;
-
-
-
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-
+	char alph;
+	
+	for (alph = 'a'; alph <= 'z' ; alph ++)
 	{
-
-		_putchar(alphabet);
-
+	_putchar(alph);
 	}
 
-
-
-	_putchar('\n');
-
-
+	_putchat('\n')
 
 }
+
