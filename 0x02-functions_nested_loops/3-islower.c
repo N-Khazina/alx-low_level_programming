@@ -1,14 +1,26 @@
 #include "main.h"
 
 /**
- * _islower - prints 1 or 0 depending on input
- * @c: first parameter
+ * test_islower - Test the _islower function
  *
- * Description: prints all lowercase letters
- * Return: Always(0).
+ * @n: Number to pass to _islower function
  */
-
 int _islower(int c)
 {
-		return (c >= 'a' && c <= 'z');
+		int r;
+
+			r = _islower(n);
+				_putchar(r + '0');
+					_putchar('\n');
+}
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+		test_islower('H');
+			return (0);
 }
