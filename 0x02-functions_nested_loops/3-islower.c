@@ -3,30 +3,9 @@
 /**
  * _islower - Short description, single line
  *
- * Return: Always 0
+ * Return: returns 1 and 0 depending on condition
  */
 int _islower(int c)
-
 {
-	if (c > 'a' && c < 'z')
-
-	{
-
-		return (1);
-
-	}
-
-
-
-	else
-
-	{
-
-		return (0);
-
-	}
-
-
-
+	return(c >= 'a' && c <= 'z')
 }
-	
