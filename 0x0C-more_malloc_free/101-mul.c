@@ -93,7 +93,9 @@ int main(int argc, char *argv[])
 	{
 		if (i < 0)
 		{
-			add = (nout[k] - '0') + addl;
+			if (addl > 0)
+			{
+				add = (nout[k] - '0') + addl;
 			if (add > 9)
 				nout[k - 1] = (add / 10) + '0';
 			nout[k] = (add % 10) + '0';
