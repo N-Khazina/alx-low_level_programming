@@ -1,1 +1,1 @@
-Readme for the 0x03-debugging
+This a a debugging session

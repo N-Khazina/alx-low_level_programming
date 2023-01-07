@@ -1,1 +1,1 @@
-my readme on this project
+Hello pointers

@@ -1,46 +1,47 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - print triple combos
  *
- * Return: Always 0 (Success/correct)
+ * Description: print triple digit combos
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
-
 {
-	int left;
-	int right;
-	int center;
+	int i, j, k;
 
+	i = 48;
+	j = 48;
+	k = 48;
 
-
-	for (left = 48; left <= 57; left++)
+	while (i < 58)
 	{
-		for (center = left + 1; center <= 57; center++)
+		j = i + 1;
+		while (j < 58)
 		{
-			for (right = center + 1 ; right <= 57; right++)
-
-
-			{
-				putchar(left);
-				putchar (center);
-				putchar (right);
-
-				if  ((left == 55) && (center == left + 1) && (right == center + 1))
+			k = j + 1;
+				while (k < 58)
 				{
-					break;
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i < 55 || j < 56 || k < 57)
+					{
+						putchar(44);
+						putchar(32);
+					}
+					k++;
 				}
 
-				putchar(',');
-				putchar (' ');
-
-			}
-
+			j++;
 		}
 
+		i++;
 	}
 
-	putchar('\n');
+	putchar(10);
 
 	return (0);
-
 }

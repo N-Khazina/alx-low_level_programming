@@ -23,6 +23,7 @@ int op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
  * op_mul - multiplies two numbers.
  * @a: first number.
@@ -34,6 +35,7 @@ int op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
  * op_div - divides two numbers.
  * @a: first number.
@@ -50,6 +52,7 @@ int op_div(int a, int b)
 	}
 	return (a / b);
 }
+
 /**
  * op_mod - calculates the module of two numbers.
  * @a: first number.

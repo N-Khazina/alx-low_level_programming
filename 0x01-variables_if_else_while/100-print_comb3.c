@@ -1,9 +1,13 @@
 #include <stdio.h>
+
 /**
- *  main - Entry point
+ * main - print double digit combos
  *
- *  Return: Always 0 (Success/completed)
+ * Description: print double digit combos
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i, j;
@@ -24,14 +28,13 @@ int main(void)
 				putchar(44);
 				putchar(32);
 			}
-
-		j++;
-}
+			j++;
+		}
 
 		i++;
-}
+	}
 
-putchar(10);
+	putchar(10);
 
-return (0);
+	return (0);
 }

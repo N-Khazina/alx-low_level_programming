@@ -5,22 +5,19 @@
  * @str: char array string type
  * Description: If odd number of chars, print (length - 1) / 2
  */
+
 void puts_half(char *str)
 {
-	int i, last;
+	int i;
 
-	i = 0;
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
 	{
-		i++;
+		_putchar(str[i]);
+
 	}
-
-	last = (i + 1) / 2;
-
-	for (i = last; str[i]; i++)
-	{
-		_putchar (str[i]);
-	}
-
-	_putchar ('\n');
+	_putchar('\n');
 }

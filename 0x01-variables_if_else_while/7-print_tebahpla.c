@@ -1,22 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - print the latterss of the alphabet
  *
- * Return: Always 0 (Success/correct)
+ * Description: print the letters of the alphabet in reverse
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
-
 {
-	char alphabet;
+	int i = 122;
 
-	for (alphabet = 122 ; alphabet >= 97; alphabet--)
+	while (i > 96)
 	{
-		putchar(alphabet);
+		putchar(i);
+		i--;
 	}
-
-	putchar('\n');
+	putchar(10);
 
 	return (0);
-
-
 }
